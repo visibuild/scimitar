@@ -8,7 +8,7 @@ module Scimitar
       def self.scim_attributes
         @scim_attributes ||= [
           Attribute.new(name: 'value',   type: 'string', required: Scimitar.engine_configuration.optional_value_fields_required),
-          Attribute.new(name: 'display', type: 'string', mutability: 'readOnly'),
+          Attribute.new(name: 'display', type: 'string'),
           Attribute.new(name: 'type',    type: 'string'),
           Attribute.new(name: 'primary', type: 'boolean'),
         ]
