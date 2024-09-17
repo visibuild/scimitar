@@ -986,6 +986,7 @@ module Scimitar
 
               matched_hashes
             else
+              path_component = :root
               [ inner_data ]
             end
 
